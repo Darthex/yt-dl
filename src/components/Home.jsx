@@ -47,7 +47,7 @@ export default function Home() {
                 }
             })
                 .then(res => {
-                    setThumbnail(res.data.thumbnail[3].url)
+                    setThumbnail(res.data.thumbnail[res.data.thubmnail.length - 1].url)
                     setTitle(res.data.title)
                     setLink('')
                     setButtonBool(prevState => !prevState)
